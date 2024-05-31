@@ -1,0 +1,225 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-background: #fff;
+  --color-text-heading2: var(--color-background);
+  --color-accent: #2196f3;
+  --color-heading: #212121;
+  --color-header-item: var(--color-heading);
+  --color-text: #757575;
+  --color-hero-bg: #2F303A;
+  --color-decor: #f5f4fa;
+  --container-padding: 15px;
+  --container-width: 1170px;
+}
+
+body {
+  font-family:"Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+p,
+pre,
+a:not(.card-link),
+ul:not(.list-reset),
+h2,
+.h2,
+h4,
+.h4 {
+ line-height: 1.71;
+}
+
+h1,
+.h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 { 
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--color-heading);
+}
+
+h3,
+.h3 {
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+  color: var(--color-heading);
+}
+
+h4,
+.h4 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.list-reset,
+.menu {
+  list-style: none;
+}
+
+.visibility-hidden {
+  display: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.section-title{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  color: var(--color-text-heading2);
+  background-color: var(--color-accent);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: calc( var(--container-width) + var(--container-padding) * 2 );
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.background {
+  color: var(--color-text-heading2);
+  background-color: var(--color-hero-bg);
+}
+
+.header {
+  padding: 23px 0;
+}
+
+.menu-item a, .header-adress-item {
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-item a {
+  color: var(--color-header-item);
+}
+
+.header-adress-item { 
+  color: inherit;
+}
+
+.menu-item a:hover , .header-adress-item:hover {
+  color: var(--color-accent);
+}
+
+.hero {
+  padding: 230px 0;
+  text-align: center;
+  min-height: 600px;
+}
+
+.hero-title {
+  margin: 0 auto;
+  max-width: 696px;
+}
+
+.hero-button {
+  margin: 20px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.doings {
+  padding-top: 0px;
+}
+
+.our-team {
+  background-color: var(--color-decor);
+}
+
+.our-team-item {
+  max-width: 270px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--color-hero-bg);
+  padding: 60px 0;
+}
+
+.footer-adress-item {
+  display: block;
+  color: var(--color-background);
+  opacity: 0.6;
+  text-decoration: none;
+  margin-top: 9px;
+}
+
+.footer-adress-location {
+  color: var(--color-background);
+}
+
+.footer-adress {
+  margin-top: 20px;
+}
+
+
+
